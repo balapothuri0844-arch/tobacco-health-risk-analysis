@@ -1,154 +1,145 @@
-Tobacco Use and Health Risk Analysis using Big Data
-📌 Project Overview
+# Tobacco Use and Health Risk Analysis using Big Data
 
+## 📌 Project Overview
 This project focuses on analyzing behavioral patterns and health risks associated with tobacco usage using large-scale healthcare datasets. The objective is to identify demographic trends, consumption patterns, and risk factors related to tobacco use.
 
-The analysis uses Big Data technologies such as Hadoop, Apache Spark, and Google Cloud Platform to process and analyze large datasets obtained from the Behavioral Risk Factor Surveillance System (BRFSS). The results help identify high-risk demographic groups and provide insights that can support public health strategies and tobacco control initiatives.
+The analysis leverages Big Data technologies such as Hadoop, Apache Spark, and Google Cloud Platform to process and analyze large datasets obtained from the Behavioral Risk Factor Surveillance System (BRFSS). The results help identify high-risk demographic groups and provide insights that can support public health strategies and tobacco control initiatives.
 
-🎯 Objective
+## 🎯 Objective
+- Analyze tobacco usage trends across different demographic groups  
+- Identify high-risk populations based on age, gender, and education level  
+- Process large healthcare datasets using Big Data technologies  
+- Generate insights that can assist public health decision-making and intervention strategies  
 
-To analyze tobacco usage trends across multiple demographic groups
+---
 
-To identify high-risk populations based on age, gender, and education levels
+## 📊 Dataset Description
+- **Source:** CDC Behavioral Risk Factor Surveillance System (BRFSS) & STATE Tobacco Activities Tracking and Evaluation System  
+- **Dataset Type:** Healthcare survey data related to tobacco consumption  
+- **Years Covered:** 2011 – 2019  
 
-To process large healthcare datasets using Big Data technologies
-
-To generate insights that can assist public health decision-making
-
-📊 Dataset Description
-
-Source: CDC Behavioral Risk Factor Surveillance System (BRFSS) & STATE Tobacco Activities Tracking and Evaluation System
-
-Dataset Type: Healthcare survey data related to tobacco consumption
-
-Years Covered: 2011 – 2019
-
-Key Attributes
-
-Tobacco usage prevalence
-
-Frequency of tobacco consumption
-
-Quit attempts
-
-Demographic attributes (age, gender, education level)
+### Key Attributes
+- Tobacco usage prevalence  
+- Frequency of tobacco consumption  
+- Quit attempts  
+- Demographic attributes (age, gender, education level)
 
 The dataset provides valuable information to analyze behavioral patterns of tobacco consumption and identify potential health risks among different population groups.
 
-🧠 System Architecture
+## 🧠 System Architecture
+The project uses a **Big Data processing pipeline** to manage and analyze large healthcare datasets.
 
-This project uses a Big Data processing pipeline to manage and analyze large healthcare datasets.
+### Key Components
+- Google Cloud Platform (GCP)
+- Google Cloud Storage
+- Hadoop Ecosystem
+- Apache Spark
+- Hive
+- BigQuery
+- Dataproc Cluster
 
-Key Components
+This architecture enables scalable data ingestion, processing, and analytical querying for large datasets.
 
-Google Cloud Platform (GCP)
+## ⚙️ Project Workflow
 
-Google Cloud Storage
+### 1. Data Acquisition
+Data was collected from the **BRFSS Survey Dataset**, which provides nationwide behavioral health information related to tobacco use.
 
-Hadoop Ecosystem
+### 2. Data Storage
+The dataset was stored in **Google Cloud Storage** using a dedicated storage bucket for managing the tobacco dataset.
 
-Apache Spark
+### 3. Big Data Infrastructure Setup
+A **Google Cloud Dataproc cluster** was created with Hadoop, Hive, and Spark services enabled to support distributed processing.
 
-Hive
+### 4. Data Cleaning
+Data preprocessing was performed using **PySpark**, including:
+- Handling missing values  
+- Standardizing data formats  
+- Filtering relevant attributes  
 
-BigQuery
+### 5. Data Preprocessing
+Using **BigQuery**, unnecessary columns were removed and a cleaned dataset schema was created for further analysis.
 
-Dataproc Cluster
+### 6. Data Analysis
+Analytical SQL queries were executed to identify trends in tobacco usage across different demographic groups.
 
-The architecture enables scalable data ingestion, processing, and analysis for large datasets.
+## 📈 Key Insights
 
-⚙️ Project Workflow
-1. Data Acquisition
+### Gender-Based Analysis
+The analysis revealed that **males consistently show higher tobacco usage rates compared to females**, indicating potential gender-based health risk differences.
 
-Data was collected from the BRFSS Survey Dataset, which provides nationwide behavioral health information related to tobacco use.
+### Age-Based Analysis
+The **25–44 age group** showed the highest average tobacco consumption, indicating increased addiction risks among young adults.
 
-2. Data Storage
+### Year-Based Analysis
+Certain years, particularly **2013**, showed peaks in tobacco usage trends, suggesting possible environmental or policy influences affecting tobacco consumption.
 
-The dataset was stored in Google Cloud Storage, using a storage bucket created for managing the tobacco dataset.
+## 🛠️ Technologies & Tools Used
 
-3. Big Data Infrastructure Setup
+### Programming
+- Python
+- SQL
 
-A Google Cloud Dataproc cluster was created with Hadoop, Hive, and Spark services enabled to support distributed processing of the dataset.
+### Big Data Technologies
+- Hadoop
+- Apache Spark
+- Hive
 
-4. Data Cleaning
+### Cloud Platform
+- Google Cloud Platform (GCP)
+- Google Cloud Storage
+- BigQuery
+- Dataproc
 
-Data preprocessing was performed using PySpark, including:
+### Data Processing Tools
+- PySpark
+- OpenRefine
 
-Handling missing values
+## 🚀 How to Run the Project
 
-Standardizing data formats
+### Step 1
+Create a **Google Cloud Platform project**.
 
-Filtering relevant attributes
+### Step 2
+Create a **Google Cloud Storage bucket** to store the dataset.
 
-5. Data Preprocessing
+Example:
+```
+tobacco-use-dataset
+```
 
-Using BigQuery, unnecessary columns were removed and a cleaned dataset schema was created for further analysis.
+### Step 3
+Upload the BRFSS dataset to the storage bucket.
 
-6. Data Analysis
+### Step 4
+Create a **Dataproc cluster** with Hadoop, Spark, and Hive enabled.
 
-Analytical queries were performed to identify trends in tobacco usage across different demographic groups.
+### Step 5
+Import the dataset into **BigQuery**.
 
-📈 Key Insights
-Gender-Based Analysis
+### Step 6
+Use **PySpark scripts** to clean and preprocess the dataset.
 
-The analysis revealed that males consistently show higher tobacco usage rates compared to females, indicating potential gender-based health risk differences.
+### Step 7
+Run analytical queries in **BigQuery** to generate insights.
 
-Age-Based Analysis
+## 📂 Project Structure
+```
+tobacco-health-risk-analysis
+│
+├── README.md
+├── final_report.pdf
+├── project_presentation.pptx
+```
 
-The 25–44 age group showed the highest average tobacco consumption, indicating increased addiction risks among young adults.
+## 👥 Team Members
+- Nandini Nagiri  
+- Vamshi Kalyan Yerramilli  
+- Vijay Venkatarao Goparaju  
+- Bala Phaneendra Pothuri  
+- Jaya Sai Krishna Paleru  
 
-Year-Based Analysis
-
-Certain years, particularly 2013, showed peaks in tobacco usage trends, suggesting possible environmental or policy influences affecting tobacco consumption.
-
-🛠️ Technologies & Tools Used
-Programming
-
-Python
-
-SQL
-
-Big Data Technologies
-
-Hadoop
-
-Apache Spark
-
-Hive
-
-Cloud Platform
-
-Google Cloud Platform (GCP)
-
-Google Cloud Storage
-
-BigQuery
-
-Dataproc
-
-Data Processing Tools
-
-PySpark
-
-OpenRefine
-
-
-👥 Team Members
-
-Nandini Nagiri
-
-Vamshi Kalyan Yerramilli
-
-Vijay Venkatarao Goparaju
-
-Bala Phaneendra Pothuri
-
-Jaya Sai Krishna Paleru
-
-📚 References
-
-CDC Behavioral Risk Factor Surveillance System (BRFSS)
-
-CDC STATE Tobacco Activities Tracking and Evaluation System
-
-Public Health Research on Tobacco Usag
+## 📚 References
+- CDC Behavioral Risk Factor Surveillance System (BRFSS)  
+- CDC STATE Tobacco Activities Tracking and Evaluation System  
+- Public health research on tobacco usage
